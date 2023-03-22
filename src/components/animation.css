@@ -1,0 +1,35 @@
+.box-anim {
+
+    transition: all 0.4s ease-in;
+  }
+
+.box-anim .image-anim {
+    transition: all 0.4s ease-in-out 0.1s;
+}
+
+.box-anim .img-anim img{
+    max-width: 75px;
+  object-fit: contain;
+}
+
+.box-anim:hover .image-anim {
+    transform: scale(1.5) translateY(-20px);
+  }
+  .box-anim:hover .image-anim img {
+    animation: bouncing 0.5s 0.3s;
+  }
+
+  @keyframes bouncing {
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }

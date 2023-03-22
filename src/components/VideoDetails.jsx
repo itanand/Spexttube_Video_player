@@ -9,6 +9,9 @@ import { fetchDataFromApi } from "../utils/api";
 import { Context } from "../context/contextApi";
 import SuggestionVideoCard from "./SuggestionVideoCard";
 
+
+import './animation.css';
+
 const VideoDetails = () => {
     const [video, setVideo] = useState();
     const [relatedVideos, setRelatedVideos] = useState();
@@ -50,7 +53,7 @@ const VideoDetails = () => {
                             width="100%"
                             height="100%"
                             style={{ backgroundColor: "#000000" }}
-                            playing={true}
+                            playing={true}   // to make autoplay
                         />
                     </div>
                     <div className="text-white font-bold text-sm md:text-xl mt-4 line-clamp-2">
@@ -58,10 +61,10 @@ const VideoDetails = () => {
                     </div>
                     <div className="flex justify-between flex-col md:flex-row mt-4">
                         <div className="flex">
-                            <div className="flex items-start">
-                                <div className="flex h-11 w-11 rounded-full overflow-hidden">
+                            <div className="flex items-start box-anim">
+                                <div className="flex h-11 w-11 rounded-full overflow-hidden image-anim">
                                     <img
-                                        className="h-full w-full object-cover"
+                                        className="h-full w-full object-cover "
                                         src={video?.author?.avatar[0]?.url}
                                     />
                                 </div>
@@ -71,8 +74,8 @@ const VideoDetails = () => {
                                     {video?.author?.title}
                                     {video?.author?.badges[0]?.type ===
                                         "VERIFIED_CHANNEL" && (
-                                        <BsFillCheckCircleFill className="text-white/[0.5] text-[12px] ml-1" />
-                                    )}
+                                            <BsFillCheckCircleFill className="text-white/[0.5] text-[12px] ml-1" />
+                                        )}
                                 </div>
                                 <div className="text-white/[0.7] text-sm">
                                     {video?.author?.stats?.subscribersText}
