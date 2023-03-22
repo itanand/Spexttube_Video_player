@@ -83,7 +83,7 @@ const VideoDetails = () => {
                             <div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15]">
                                 <AiOutlineLike className="text-xl text-white mr-2" />
                                 {`${abbreviateNumber(
-                                    video?.stats?.views,
+                                    video?.stats?.likes,
                                     2
                                 )} Likes`}
                             </div>
@@ -92,6 +92,12 @@ const VideoDetails = () => {
                                     video?.stats?.views,
                                     2
                                 )} Views`}
+                            </div>
+                            <div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15] ml-4">
+                                {`${abbreviateNumber(
+                                    video?.stats?.comments,
+                                    2
+                                )} Comments`}
                             </div>
                         </div>
                     </div>

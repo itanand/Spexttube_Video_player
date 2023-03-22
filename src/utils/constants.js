@@ -12,7 +12,7 @@ import { FiSettings, FiHelpCircle } from "react-icons/fi";
 
 export const categories = [
     { name: "New", icon: <AiFillHome />, type: "home" },
-    { name: "Trending", icon: <MdLocalFireDepartment />, type: "category" },
+    { name: "Collegepur", icon: <MdLocalFireDepartment />, type: "category" },
     { name: "Music", icon: <CgMusicNote />, type: "category" },
     { name: "Films", icon: <FiFilm />, type: "category" },
     { name: "Live", icon: <MdLiveTv />, type: "category" },

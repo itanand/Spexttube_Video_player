@@ -28,3 +28,7 @@ const App = () => {
 };
 
 export default App;
+
+
+// exact - The exact param disables the partial matching for
+// a route and makes sure that it only returns the route if the path is an EXACT match to the current url.
