@@ -12,16 +12,16 @@ import { FiSettings, FiHelpCircle } from "react-icons/fi";
 
 export const categories = [
     { name: "New", icon: <AiFillHome />, type: "home" },
-    { name: "Collegepur", icon: <MdLocalFireDepartment />, type: "category" },
+    { name: "JavaScript", icon: <MdLocalFireDepartment />, type: "category" },
     { name: "Music", icon: <CgMusicNote />, type: "category" },
-    { name: "Films", icon: <FiFilm />, type: "category" },
+    { name: "Video Editing", icon: <FiFilm />, type: "category" },
     { name: "Live", icon: <MdLiveTv />, type: "category" },
-    { name: "Gaming", icon: <IoGameControllerSharp />, type: "category" },
-    { name: "News", icon: <ImNewspaper />, type: "category" },
-    { name: "Sports", icon: <GiDiamondTrophy />, type: "category" },
+    { name: "Website Development", icon: <IoGameControllerSharp />, type: "category" },
+    { name: "Latest Technology", icon: <ImNewspaper />, type: "category" },
+    { name: "Startups", icon: <GiDiamondTrophy />, type: "category" },
     { name: "Learning", icon: <RiLightbulbLine />, type: "category" },
     {
-        name: "Fashion & beauty",
+        name: "Engineering & Tech",
         icon: <GiEclipse />,
         type: "category",
         divider: true,
